@@ -77,8 +77,8 @@ if uploaded_file is not None:
     # Load the model
     model = 'SVR_IPK_model.pkl'
 
-    if os.path.exists(model_path):
-        with open(model_path, 'rb') as f:
+    if os.path.exists(model):
+        with open(model, 'rb') as f:
             loaded_model = pickle.load(f)
         
         scaler = loaded_model[0]
