@@ -75,7 +75,7 @@ if uploaded_file is not None:
     st.dataframe(input_data)
 
     # Load the model
-    model = r'SVR_IPK_model.pkl'
+    model = 'SVR_IPK_model.pkl'
 
     if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
